@@ -1,0 +1,441 @@
+@function rpx($value) {
+  @return $value * 1px;
+}
+
+* {
+  transition: width 2s;
+  -moz-transition: width 2s;
+  -webkit-transition: width 2s;
+  -o-transition: width 2s;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  padding: rpx(10);
+  text-align: center;
+}
+
+.header-img {
+  width: 100%;
+  background: #f8f8f8;
+  image {
+    width: calc(100% - 20px);
+    padding: 0 10px 10px 10px;
+  }
+}
+
+.info-group {
+  .name, .phone {
+    display: block;
+    margin: 10px 0;
+    .input-style {
+      display: inline-block;
+      border: 1px solid #e6e6e6;
+      padding: 2px;
+      margin-top: 10px;
+      float: right;
+    }
+    div {
+      display: inline-block;
+      padding: 0 10px;
+      margin-bottom: -40px;
+      color: #a4110f;
+      font-weight: 600;
+      float: left;
+      line-height: 50px;
+    }
+  }
+}
+
+.bound {
+  button {
+    background: #a4110f;
+    color: #ffffff;
+    padding: 0 60px;
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 3px;
+    margin-top: 30px;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+/**************** log ****************/
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: rpx(40);
+}
+
+.log-item {
+  margin: rpx(10);
+}
+
+/**************** log ****************/
+
+/**************** userinfo ****************/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: rpx(128);
+  height: rpx(128);
+  margin: rpx(20);
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: rpx(100);
+}
+
+.form-control {
+  display: block;
+  padding: 0 rpx(12);
+  margin-bottom: rpx(5);
+  border: rpx(1) solid #ccc;
+}
+
+.counter {
+  display: inline-block;
+  margin: rpx(10) auto;
+  padding: rpx(5) rpx(10);
+  color: blue;
+  border: rpx(1) solid blue;
+}
+
+/**************** userinfo ****************/
+/**************** counter ****************/
+.counter-warp {
+  .menu-list {
+    .cuisine {
+      font-size: 24px;
+      padding: 5px 10px;
+      color: #db3c2a;
+    }
+    .active {
+      border-bottom: 1px solid #f3f3f3;
+      color: #db3c2a;
+    }
+  }
+  .order {
+    button {
+      background: #a4110f;
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 30px;
+      border-radius: 3px;
+      margin-top: 30px;
+      margin-bottom: 100px;
+      width: 200px;
+    }
+  }
+  .oPay-counter {
+    .today {
+      padding: rpx(10) rpx(10) 0 rpx(10);
+      .today-text {
+        float: left;
+        font-size: rpx(16);
+      }
+      .money-box {
+        padding: 0 rpx(10);
+        float: right;
+        .money {
+          color: black;
+          float: right;
+          font-size: rpx(18);
+          .symbol {
+            padding-top: rpx(5);
+            float: left;
+            font-size: rpx(14);
+          }
+        }
+        .count-box {
+          float: right;
+          margin: 0 rpx(10);
+          .count {
+            border: 1px solid #fec838;
+            border-radius: rpx(20);
+            .Ascending, .Degression {
+              width: rpx(22);
+              height: rpx(22);
+              font-size: rpx(16);
+              display: inline-block;
+              padding: rpx(1);
+              border: 0;
+              font-weight: 600;
+            }
+            .count-num {
+              font-size: rpx(14);
+              color: #333333;
+              display: inline-block;
+              padding: rpx(5);
+            }
+            .Ascending {
+              background: #fec838;
+              border-radius: 50%;
+            }
+            .Degression {
+              color: #fec838;
+              background: #f4f4f4;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+    .menuList-Box {
+      padding: 0 rpx(10);
+      .list {
+        float: left;
+        .menuList {
+          padding-top: rpx(8);
+          color: #818181;
+          font-size: rpx(14);
+          text-align: left;
+        }
+      }
+    }
+  }
+  .ordermsg {
+    text-align: center;
+  }
+  .nav {
+    background: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    li {
+      width: 33.3%;
+      float: left;
+      padding: 10px 0 15px 0;
+      img {
+        width: 28px;
+        height: 20px;
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        display: block;
+      }
+      a {
+        font-size: rpx(12);
+        border: 0;
+        text-align: center;
+      }
+      .indent, .myself {
+        width: 20px;
+      }
+    }
+
+    .pay-box {
+      background: black;
+      padding: 15px;
+      .total {
+        .money {
+          color: white;
+          float: left;
+          font-size: rpx(18);
+          .symbol {
+            padding-top: rpx(5);
+            float: left;
+            font-size: rpx(14);
+          }
+        }
+        .summation {
+          font-size: rpx(14);
+          color: #f4393d;
+          float: left;
+          padding-top: rpx(5);
+        }
+      }
+      .goPay {
+        float: right;
+        color: #f4393d;
+        font-size: rpx(22);
+        padding-left: 50px;
+        border-left: 1px solid #f3f3f3;
+      }
+    }
+  }
+  .myself-heard {
+    height: rpx(100);
+    background: linear-gradient(to right, #ff3458 0%, #ff6720 100%);
+    .head-portrait {
+      width: rpx(60);
+      height: rpx(60);
+      border-radius: 50%;
+      background: #ffe2b4;
+      display: block;
+      margin: rpx(20) 0 rpx(20) rpx(20);
+      float: left;
+      .avatar {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    .user-mag {
+      float: right;
+      width: calc(100% - 120px);
+      color: white;
+      margin: rpx(20);
+      .username {
+        font-size: rpx(24);
+      }
+      .usertel {
+        font-size: rpx(14);
+      }
+    }
+  }
+  .order-list {
+    line-height: rpx(50);
+    border-bottom: 1px solid #f3f3f3;
+    margin-bottom: rpx(80);
+    .cTime {
+      float: left;
+      width: calc(65% - 20px);
+      font-size: rpx(16);
+      padding-left: 20px;
+    }
+    .state {
+      width: calc(35% - 20px);
+      float: right;
+      text-align: right;
+      font-size: rpx(16);
+      padding-right: 20px;
+
+    }
+  }
+  .indent-list {
+    padding: rpx(10) rpx(15) rpx(80) rpx(15) ;
+    .time-title {
+      text-align: center;
+    }
+    .population-box {
+      padding: rpx(10) rpx(30);
+      .population-num {
+        float: left;
+      }
+      .population {
+        float: right;
+      }
+      .unfold {
+        float: right;
+        background: #f8f8f8;
+        margin-left: rpx(5);
+        padding: rpx(3) rpx(3) 0 rpx(3);
+      }
+    }
+    .user-list-box {
+      padding: rpx(10) rpx(30);
+      .user-list {
+        li {
+          font-size: rpx(16);
+          padding: rpx(5) 0;
+        }
+      }
+    }
+  }
+  .order-history {
+    font-weight: 600;
+    padding: rpx(10) rpx(10) 0 rpx(10);
+  }
+  .AddFood {
+    .AddList{
+      .food-box{
+        margin: rpx(5) rpx(10);
+        .this-input{
+          border: 1px solid #e3e3e3;
+          padding: rpx(5);
+          margin-left:rpx(25);
+          background: #f3f3f3;
+          text-align: center;
+          width: calc(100% - 180px);
+          float: left;
+        }
+        .edit,.del,.keep{
+          width: rpx(50);
+          background: #a4110f;
+          color: #fff;
+          font-size: rpx(14);
+          padding: 0;
+          margin:0 rpx(5);
+          float: left;
+        }
+      }
+    }
+    .add-btn {
+      margin-top: rpx(10);
+      margin-bottom: rpx(100);
+      input{
+        border: 1px solid #e3e3e3;
+        padding: rpx(5);
+        margin: 0 rpx(35);
+        background: #f3f3f3;
+      }
+      .btn-group {
+        margin: rpx(5) rpx(35);
+        button {
+          margin: rpx(10) auto;
+          background: #a4110f;
+          color: #fff;
+          line-height: rpx(38);
+          border: 1px solid #a4110f;
+          border-radius: rpx(3);
+        }
+        .addfood, .savefood {
+          width: 40%;
+          float: left;
+          margin: 0 rpx(15);
+        }
+      }
+    }
+  }
+}
+
+/**************** counter ****************/
+/**************** QRcode ****************/
+.QRcodeBox{
+  position: relative;
+  .QRcode{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: rpx(50);
+  }
+  .QRcodeTitle{
+    text-align: center;
+  }
+}
+/**************** QRcode ****************/

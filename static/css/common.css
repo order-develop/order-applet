@@ -1,0 +1,63 @@
+* {
+  transition: width 2s;
+  -moz-transition: width 2s;
+  -webkit-transition: width 2s;
+  -o-transition: width 2s; }
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box; }
+
+.card {
+  padding: 10px;
+  text-align: center; }
+
+/**************** log ****************/
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40px; }
+
+.log-item {
+  margin: 10px; }
+
+/**************** log ****************/
+/**************** userinfo ****************/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.userinfo-avatar {
+  width: 128px;
+  height: 128px;
+  margin: 20px;
+  border-radius: 50%; }
+
+.userinfo-nickname {
+  color: #aaa; }
+
+.usermotto {
+  margin-top: 100px; }
+
+.form-control {
+  display: block;
+  padding: 0 12px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc; }
+
+.counter {
+  display: inline-block;
+  margin: 10px auto;
+  padding: 5px 10px;
+  color: blue;
+  border: 1px solid blue; }
+
+/**************** userinfo ****************/
+
+/*# sourceMappingURL=common.css.map */
