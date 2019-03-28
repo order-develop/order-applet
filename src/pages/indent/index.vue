@@ -1,7 +1,7 @@
 <template>
   <div class="counter-warp">
     <div class="header-img">
-      <img src="../../images/header.png"/>
+      <img src="../images/header.png"/>
     </div>
 
     <div>
@@ -16,21 +16,21 @@
     </div>
 
     <ul class="nav">
-      <li  @click="goOrder">
-        <img src="../../images/theorder.png"/><a >点餐</a>
+      <li @click="goOrder">
+        <img src="../images/theorder.png"/><a >点餐</a>
       </li>
       <li>
-        <img src="../../images/theindent.png" class="indent"/><a @click="indent" style="color: #a4110f;">订单</a>
+        <img src="../images/theindent.png" class="indent"/><a @click="indent" style="color: #a4110f;">订单</a>
       </li>
       <li @click="myself">
-        <img src="../../images/myself.png" class="myself"/><a >我的</a>
+        <img src="../images/myself.png" class="myself"/><a >我的</a>
       </li>
     </ul>
+
   </div>
 </template>
 
 <script>
-import card from '@/components/card'
 const APPLET_URL = require('./../../../static/js/address')
 
 export default {
@@ -46,10 +46,6 @@ export default {
       promotion: [],
       cates: []
     }
-  },
-
-  components: {
-    card
   },
   mounted () {
     let _that = this
@@ -100,7 +96,7 @@ export default {
     },
     goPay (orderId, userId) {
       wx.navigateTo({
-        url: '/pages/ConfirmPayment/main?orderId=' + orderId + '&userId=' + userId
+        url: '/pages/ConfirmPayment/main?orderId=' + orderId + '&userId=' + userId + '&thePay=1'
       })
     },
     myself () {
@@ -121,3 +117,7 @@ export default {
   }
 }
 </script>
+
+<style>
+
+</style>

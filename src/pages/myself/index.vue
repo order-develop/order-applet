@@ -21,13 +21,13 @@
 
     <ul class="nav">
       <li  @click="goOrder">
-        <img src="../../images/theorder.png"/><a>点餐</a>
+        <img src="../images/theorder.png"/><a>点餐</a>
       </li>
       <li @click="indent">
-        <img src="../../images/indent.png" class="indent"/><a  >订单</a>
+        <img src="../images/indent.png" class="indent"/><a  >订单</a>
       </li>
       <li>
-        <img src="../../images/themyself.png" class="myself"/><a style="color: #a4110f;">我的</a>
+        <img src="../images/themyself.png" class="myself"/><a style="color: #a4110f;">我的</a>
       </li>
     </ul>
   </div>
@@ -93,7 +93,7 @@ export default {
     },
     indent () {
       wx.navigateTo({
-        url: '/pages/payerror/main?'
+        url: '/pages/indent/main?'
       })
     },
     getUserId () {

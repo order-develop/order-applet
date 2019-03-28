@@ -32,7 +32,6 @@ module.exports = {
     wx: true,
     getApp: true,
     getPage: true,
-    requirePlugin: true,
-    APPLET_URL: true
+    requirePlugin: true
   }
 }

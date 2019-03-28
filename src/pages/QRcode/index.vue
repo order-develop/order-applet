@@ -1,7 +1,7 @@
 <template>
   <div class="counter-warp">
     <div class="header-img">
-      <img src="../../images/header.png"/>
+      <img src="../images/header.png"/>
     </div>
 
     <div class="QRcodeBox">
@@ -12,13 +12,13 @@
 
     <ul class="nav">
       <li  @click="goOrder">
-        <img src="../../images/theorder.png"/><a >点餐</a>
+        <img src="../images/theorder.png"/><a >点餐</a>
       </li>
       <li @click="indent">
-        <img src="../../images/theindent.png" class="indent"/><a @click="indent" style="color: #a4110f;">订单</a>
+        <img src="../images/theindent.png" class="indent"/><a @click="indent" style="color: #a4110f;">订单</a>
       </li>
       <li @click="myself">
-        <img src="../../images/myself.png" class="myself"/><a >我的</a>
+        <img src="../images/myself.png" class="myself"/><a >我的</a>
       </li>
     </ul>
   </div>

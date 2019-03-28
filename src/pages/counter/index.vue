@@ -1,8 +1,7 @@
 <template>
   <div class="counter-warp">
-
     <div class="header-img">
-      <img src="../../images/header.png"/>
+      <img src="../images/header.png"/>
     </div>
 
     <ul class="menu-list">
@@ -15,13 +14,13 @@
 
     <ul class="nav">
       <li>
-        <img src="../../images/order.png"/><a @click="">点餐</a>
+        <img src="../images/order.png"/><a @click="">点餐</a>
       </li>
       <li @click="indent">
-        <img src="../../images/indent.png" class="indent"/><a >订单</a>
+        <img src="../images/indent.png" class="indent"/><a >订单</a>
       </li>
       <li @click="myself">
-        <img src="../../images/myself.png" class="myself"/><a >我的</a>
+        <img src="../images/myself.png" class="myself"/><a >我的</a>
       </li>
     </ul>
 
@@ -30,6 +29,7 @@
 
 <script>
 const APPLET_URL = require('./../../../static/js/address')
+
 export default {
   data () {
     return {
@@ -40,6 +40,7 @@ export default {
   },
   onLoad (option) {
     let _that = this
+    console.log(option.userMsg)
     _that.userMsg = option.userMsg
   },
   mounted () {
@@ -62,7 +63,7 @@ export default {
     order () {
       let _that = this
       wx.redirectTo({
-        url: '/pages/ConfirmPayment/main?userMsg=' + JSON.stringify(_that.userMsg) + '&foodPackageId=' + _that.foodPackageId
+        url: '/pages/ConfirmPayment/main?userMsg=' + _that.userMsg + '&foodPackageId=' + _that.foodPackageId
       })
     },
     myself () {
@@ -72,7 +73,7 @@ export default {
     },
     indent () {
       wx.redirectTo({
-        url: '/pages/payerror/main?'
+        url: '/pages/indent/main?'
       })
     }
   }
@@ -80,7 +81,5 @@ export default {
 </script>
 
 <style>
-.counter-warp {
-  text-align: center;
-}
+
 </style>

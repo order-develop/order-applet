@@ -3,11 +3,11 @@
     "pages/index/main",
     "pages/logs/main",
     "pages/counter/main",
+    "pages/indent/main",
     "pages/ConfirmPayment/main",
-    "pages/payerror/main",
     "pages/paysucceed/main",
-    "pages/myself/main",
-    "pages/QRcode/main"
+    "pages/QRcode/main",
+    "pages/myself/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

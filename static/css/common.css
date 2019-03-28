@@ -17,6 +17,51 @@
   padding: 10px;
   text-align: center; }
 
+.header-img {
+  width: 100%;
+  background: #f8f8f8; }
+  .header-img image {
+    width: calc(100% - 20px);
+    padding: 0 10px 10px 10px; }
+
+.info-group .name, .info-group .phone {
+  display: block;
+  margin: 10px 0; }
+  .info-group .name .input-style, .info-group .phone .input-style {
+    display: inline-block;
+    border: 1px solid #e6e6e6;
+    padding: 2px;
+    margin-top: 10px;
+    float: right; }
+  .info-group .name div, .info-group .phone div {
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom: -40px;
+    color: #a4110f;
+    font-weight: 600;
+    float: left;
+    line-height: 50px; }
+
+.bound button {
+  background: #a4110f;
+  color: #ffffff;
+  padding: 0 60px;
+  font-size: 18px;
+  line-height: 30px;
+  border-radius: 3px;
+  margin-top: 30px; }
+
+.clearfix:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
 /**************** log ****************/
 .log-list {
   display: flex;
@@ -59,5 +104,240 @@
   border: 1px solid blue; }
 
 /**************** userinfo ****************/
+/**************** counter ****************/
+.counter-warp .menu-list .cuisine {
+  font-size: 24px;
+  padding: 5px 10px;
+  color: #db3c2a;
+  text-align: center; }
+.counter-warp .menu-list .active {
+  border-bottom: 1px solid #f3f3f3;
+  color: #db3c2a; }
+.counter-warp .order button {
+  background: #a4110f;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  border-radius: 3px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  width: 200px; }
+.counter-warp .oPay-counter .today {
+  padding: 10px 10px 0 10px; }
+  .counter-warp .oPay-counter .today .today-text {
+    float: left;
+    font-size: 16px; }
+  .counter-warp .oPay-counter .today .money-box {
+    padding: 0 10px;
+    float: right; }
+    .counter-warp .oPay-counter .today .money-box .money {
+      color: black;
+      float: right;
+      font-size: 18px; }
+      .counter-warp .oPay-counter .today .money-box .money .symbol {
+        padding-top: 5px;
+        float: left;
+        font-size: 14px; }
+    .counter-warp .oPay-counter .today .money-box .count-box {
+      float: right;
+      margin: 0 10px; }
+      .counter-warp .oPay-counter .today .money-box .count-box .count {
+        border: 1px solid #fec838;
+        border-radius: 20px; }
+        .counter-warp .oPay-counter .today .money-box .count-box .count .Ascending, .counter-warp .oPay-counter .today .money-box .count-box .count .Degression {
+          width: 22px;
+          height: 22px;
+          font-size: 16px;
+          display: inline-block;
+          padding: 1px;
+          border: 0;
+          font-weight: 600;
+          text-align: center; }
+        .counter-warp .oPay-counter .today .money-box .count-box .count .count-num {
+          font-size: 14px;
+          color: #333333;
+          display: inline-block;
+          padding: 5px; }
+        .counter-warp .oPay-counter .today .money-box .count-box .count .Ascending {
+          background: #fec838;
+          border-radius: 50%; }
+        .counter-warp .oPay-counter .today .money-box .count-box .count .Degression {
+          color: #fec838;
+          background: #f4f4f4;
+          border-radius: 50%; }
+.counter-warp .oPay-counter .menuList-Box {
+  padding: 0 10px; }
+  .counter-warp .oPay-counter .menuList-Box .list {
+    float: left; }
+    .counter-warp .oPay-counter .menuList-Box .list .menuList {
+      padding-top: 8px;
+      color: #818181;
+      font-size: 14px;
+      text-align: left; }
+.counter-warp .ordermsg {
+  text-align: center; }
+.counter-warp .nav {
+  background: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100; }
+  .counter-warp .nav li {
+    width: 33.3%;
+    float: left;
+    padding: 10px 0 15px 0; }
+    .counter-warp .nav li img {
+      width: 28px;
+      height: 20px;
+      text-align: center;
+      position: relative;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      display: block; }
+    .counter-warp .nav li a {
+      font-size: 12px;
+      border: 0;
+      text-align: center; }
+    .counter-warp .nav li .indent, .counter-warp .nav li .myself {
+      width: 20px; }
+  .counter-warp .nav .pay-box {
+    background: black;
+    padding: 15px; }
+    .counter-warp .nav .pay-box .total .money {
+      color: white;
+      float: left;
+      font-size: 18px; }
+      .counter-warp .nav .pay-box .total .money .symbol {
+        padding-top: 5px;
+        float: left;
+        font-size: 14px; }
+    .counter-warp .nav .pay-box .total .summation {
+      font-size: 14px;
+      color: #f4393d;
+      float: left;
+      padding-top: 5px; }
+    .counter-warp .nav .pay-box .goPay {
+      float: right;
+      color: #f4393d;
+      font-size: 22px;
+      padding-left: 50px;
+      border-left: 1px solid #f3f3f3; }
+.counter-warp .myself-heard {
+  height: 100px;
+  background: linear-gradient(to right, #ff3458 0%, #ff6720 100%); }
+  .counter-warp .myself-heard .head-portrait {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ffe2b4;
+    display: block;
+    margin: 20px 0 20px 20px;
+    float: left; }
+    .counter-warp .myself-heard .head-portrait .avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; }
+  .counter-warp .myself-heard .user-mag {
+    float: right;
+    width: calc(100% - 120px);
+    color: white;
+    margin: 20px; }
+    .counter-warp .myself-heard .user-mag .username {
+      font-size: 24px; }
+    .counter-warp .myself-heard .user-mag .usertel {
+      font-size: 14px; }
+.counter-warp .order-list {
+  line-height: 50px;
+  border-bottom: 1px solid #f3f3f3;
+  margin-bottom: 80px; }
+  .counter-warp .order-list .cTime {
+    float: left;
+    width: calc(65% - 20px);
+    font-size: 16px;
+    padding-left: 20px; }
+  .counter-warp .order-list .state {
+    width: calc(35% - 20px);
+    float: right;
+    text-align: right;
+    font-size: 16px;
+    padding-right: 20px; }
+.counter-warp .indent-list {
+  padding: 10px 15px 80px 15px; }
+  .counter-warp .indent-list .time-title {
+    text-align: center; }
+  .counter-warp .indent-list .population-box {
+    padding: 10px 30px; }
+    .counter-warp .indent-list .population-box .population-num {
+      float: left; }
+    .counter-warp .indent-list .population-box .population {
+      float: right; }
+    .counter-warp .indent-list .population-box .unfold {
+      float: right;
+      background: #f8f8f8;
+      margin-left: 5px;
+      padding: 3px 3px 0 3px; }
+  .counter-warp .indent-list .user-list-box {
+    padding: 10px 30px; }
+    .counter-warp .indent-list .user-list-box .user-list li {
+      font-size: 16px;
+      padding: 5px 0; }
+.counter-warp .order-history {
+  font-weight: 600;
+  padding: 10px 10px 0 10px; }
+.counter-warp .AddFood .AddList .food-box {
+  margin: 5px 10px; }
+  .counter-warp .AddFood .AddList .food-box .this-input {
+    border: 1px solid #e3e3e3;
+    padding: 5px;
+    margin-left: 25px;
+    background: #f3f3f3;
+    text-align: center;
+    width: calc(100% - 180px);
+    float: left; }
+  .counter-warp .AddFood .AddList .food-box .edit, .counter-warp .AddFood .AddList .food-box .del, .counter-warp .AddFood .AddList .food-box .keep {
+    width: 50px;
+    background: #a4110f;
+    color: #fff;
+    font-size: 14px;
+    padding: 0;
+    margin: 0 5px;
+    float: left; }
+.counter-warp .AddFood .add-btn {
+  margin-top: 10px;
+  margin-bottom: 100px; }
+  .counter-warp .AddFood .add-btn input {
+    border: 1px solid #e3e3e3;
+    padding: 5px;
+    margin: 0 35px;
+    background: #f3f3f3; }
+  .counter-warp .AddFood .add-btn .btn-group {
+    margin: 5px 35px; }
+    .counter-warp .AddFood .add-btn .btn-group button {
+      margin: 10px auto;
+      background: #a4110f;
+      color: #fff;
+      line-height: 38px;
+      border: 1px solid #a4110f;
+      border-radius: 3px; }
+    .counter-warp .AddFood .add-btn .btn-group .addfood, .counter-warp .AddFood .add-btn .btn-group .savefood {
+      width: 40%;
+      float: left;
+      margin: 0 15px; }
+
+/**************** counter ****************/
+/**************** QRcode ****************/
+.QRcodeBox {
+  position: relative; }
+  .QRcodeBox .QRcode {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50px; }
+  .QRcodeBox .QRcodeTitle {
+    text-align: center; }
+
+/**************** QRcode ****************/
 
 /*# sourceMappingURL=common.css.map */

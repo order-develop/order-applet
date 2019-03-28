@@ -1,7 +1,7 @@
 <template>
   <div class="counter-warp">
     <div class="header-img">
-      <img src="../../images/header.png"/>
+      <img src="../images/header.png"/>
     </div>
 
     <div class="oPay-counter clearfix">
@@ -48,11 +48,6 @@
 <script>
 const APPLET_URL = require('./../../../static/js/address')
 export default {
-  // computed: {
-  //   count () {
-  //     return store.state.count
-  //   }
-  // },
   data () {
     return {
       univalence: '',
@@ -75,7 +70,8 @@ export default {
   },
   mounted () {
     let _that = this
-    if (_that.orderId != null) {
+    if (_that.thePay != null) {
+      // 获取历史用户订单
       wx.request({
         url: APPLET_URL.url + '/user/order/userId/orderId?=' + Math.random(),
         data: {
@@ -215,8 +211,6 @@ export default {
 }
 </script>
 
-<style>
-.counter-warp {
-  text-align: center;
-}
+<style scoped>
+
 </style>

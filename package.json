@@ -17,13 +17,8 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
-    "jquery": "^3.3.1",
     "mpvue": "^1.0.11",
-    "qrcode": "^1.3.3",
-    "upng": "^1.0.1",
     "upng-js": "^2.1.0",
-    "vue-qr": "^1.5.2",
-    "vue-template-compiler": "^2.5.10",
     "vuex": "^3.0.1",
     "weapp-qrcode": "^1.0.0"
   },
